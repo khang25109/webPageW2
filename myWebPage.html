@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap" rel="stylesheet">
     <script>
         function Redirect(){
             window.location = "myWebPage.html";
@@ -16,7 +19,7 @@
 <body>
     <header>
       <div class="logo">
-        <img src="img/lamborLogo.png" alt="Computer Force Logo">
+        <img src="img/logo2.jpg" alt="Computer Force Logo">
     </div>
         
     </header>
@@ -26,74 +29,106 @@
         <input type="text" id="search-box" placeholder="Enter search term">
         <button id="search-button">Search</button>
     </div>
-        <ul id="menuBox">
-            <li><a href="myWebPage.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+    <div class="navbar">
+        <a href="myWebPage.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Products 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="organicCoffee.html">Organic Coffee</a>
+              <a href="#">Premium Tea</a>
+              <a href="#">Fancy Cookies</a>
+            </div>
+          </div> 
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="organicCoffee.html">About Our Company</a>
+              <a href="#">Management Team</a>
+              <a href="#">Careers</a>
+            </div>
+          </div> 
+        <a href="contact.html">Contact Us</a>   
+    </div>
+         
     </nav>
 
     <main>
       <section id="content">
-        <h1 id="h1-p">Developing web pages for task 2 avtivity</h1>
- 
-        <div class="news" >
-            <h2 id="news-p">News</h2>
-            <p id="news-p">LAMBORGHINI WORLD</p>
-
+        <div class="homeMenu" >
+            <p class="welcome">WELCOME</p>
+            <p class="title">Start your day with a coffee</p>
+            <p class="welcome2">ROASTED WITH LOVE</p>
+            <p class="text">For the first time, the exclusive experience offered 
+                by the Lamborghini Esperienza Giro program involved dreamlike locations 
+                in Southeast Asia.
+            </p>
+            <div>
+                <button class="orderBtn">Order Now</button>
+            </div>
+        </div>
+        <div class="homeMenu2">
+            <div class="item1">
+                
+                <div class="depr1">
+                    <img src="img/hotCoffee.jpg">
+                    <p class="depTitle">Hot Coffee</p>
+                    <p class="depContent">
+                        You are working as skilled web developers in your organisation. 
+                        You will be required to develop information 
+                        architecture for an e-commerce website that meets company
+                        requirements.
+                    </p>
+                    <p class="depMore">
+                        <a class="more" href="contact.html">FIND OUT MORE &#8594;</a>
+                    </p>
+                    
+                </div>
+            </div> 
+            <div class="item2">
+                <div class="depr1">
+                    <img class="iceCF" src="img/icedCoffee.jpg">
+                    <p class="depTitle">Iced Coffee</p>
+                    <p class="depContent">
+                        You are working as skilled web developers in your organisation. 
+                        You will be required to develop information 
+                        architecture for an e-commerce website that meets company
+                        requirements.
+                    </p>
+                    <p class="depMore">
+                        <a class="more" href="contact.html">FIND OUT MORE &#8594;</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="item3">
+                <div class="depr1">
+                    <img src="img/milkShake.jpg">
+                    <p class="depTitle">Coffee Milk Shake</p>
+                    <p class="depContent">
+                        You are working as skilled web developers in your organisation. 
+                        You will be required to develop information 
+                        architecture for an e-commerce website that meets company
+                        requirements.
+                    </p>
+                    <p class="depMore">
+                        <a class="more" href="contact.html">FIND OUT MORE &#8594;</a>
+                    </p>
+                    
+                </div>
+            </div>      
         </div>
         
     </section>
-    <section id="content2">
-        <div class="content-news">
-            <h4 class="date">18 OCTOBER 2023</h2>
-            <p id="title-news">LAMBORGHINI ESPERIENZA GIRO EXPANDS TO SOUTHEAST ASIA</p>
-            <h3 class="date">For the first time, the exclusive experience offered by the Lamborghini Esperienza Giro program involved dreamlike locations in Southeast Asia. </h5>
-        </div>
-        <div class="content-main">
-            <div>
-                <img class="img-content1" src="img/lamborContent.png">
-            </div>
-            <div>
-                <p>20 OCTOBER 2023</p>
-                <P class="text-content">REVUELTO STARS IN THE 20TH AUTOSTYLE DESIGN COMPETITION</P>
-                <button id="content-button">READ MORE</button>
-            </div>
-        </div>
-        <div class="content-main2">
-            <div>
-                <img class="img-content1" src="img/lamborContent2.png">
-            </div>   
-            <div>
-                <p>18 OCTOBER 2023</p>
-                <P class="text-content">LAMBORGHINI REVUELTO DYNAMIC LAUNCH</P>
-                <button id="content-button">READ MORE</button>
-            </div>
-        </div>
-    </section>
-    <div  id="bottom-button">
-        <button class="button-end">SEE ALL</button>
-    </div>
-
-          <aside>
-              <h2>Purchase</h2>
-              <table>
-                <tr>
-                    <td>0 items</td>
-                    <td>Cart sub-total: $0</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button id="checkout-button">Go to Checkout</button></td>
-                </tr>
-            </table>
-          </aside>
-         
+    
     </main>
 
     <footer>
-        <p>Minh Khang Nguyen &copy; 2023</p>
+        <p class="footerP">Minh Khang Nguyen &copy; 2023</p>
     </footer>
 </body>
 
